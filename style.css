@@ -33,9 +33,10 @@ p {font-size: 16px;}
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 5px;
+  background-color: #2f2f2f;
 }
 .navbar-nav  li a:hover {
-  color: #1abc9c !important;
+  color: white !important;
 }
 
 
