@@ -38,55 +38,72 @@ p {font-size: 16px;}
   color: #1abc9c !important;
 }
 
-#cards-holder {
+
+
+
+
+
+/* style of the cards  */
+
+#cards-holder
+{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  
 }
+
+
+
 .card {
-  width: 40rem;
+  width: 400px;
   border: 1px solid #ccc;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  margin: 10px;
+  margin: 15px;
   overflow: hidden;
   background-color: #fff;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card:hover img {
+  filter: brightness(70%);
 }
 
 .card img {
   width: 100%;
-  height: 0;
+  height: 300px;
   object-fit: fill;
-  flex: 1;
+  margin: 15px;
+  transition: filter 0.3s ease-in-out;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  flex: 1;
-}
-
-.card-body h5 {
-  margin: 0;
+.card h2 {
+  margin: 10px;
   font-size: 24px;
-  color: black;
+  color: #0a0606;
+  text-align: center;
 }
 
-.card-body p {
-  margin: 10px 0;
+.card p {
+  margin: 10px 20px;
   font-size: 16px;
-  color: grey;
+  color: #000000;
 }
 
-.card-body .price {
+.card .price {
   display: block;
   font-size: 20px;
-  color: black;
-  font-weight: bold;
+  color: rgb(128, 0, 0);
   margin-top: 10px;
+  text-align: center;
 }
